@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 nav {
-    position: fixed;
+    position:fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,8 @@ nav {
     height: 10vh;
     padding: 0vw 10vw;
     z-index: 99;
-    /* background-color: rgb(211, 205, 255); */
+    /* background-color: orangered; */
+    opacity: 80%;
 }
 
 nav a,
@@ -49,6 +50,16 @@ i {
     font-size: 1vw;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
+}
+
+nav a:hover{
+  background-color: #ea76767c;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 4px;
+  transition: 1s;
 }
 
 .cntr-nav {
@@ -67,7 +78,7 @@ nav i {
     width: 100%;
     height: 100vh;
     background-image: url('./Assets/background3.jpeg');
-    background-size:95%;
+    background-size:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -394,4 +405,7 @@ section {
     height: 50vh;
     
 }
+  }
+  .ri-menu-fill{
+    visibility: hidden;
   }
